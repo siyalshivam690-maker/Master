@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>angel | Official</title>
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1477069597457680');
+fbq('track', 'PageView');
+
+function trackSubscribe(e){
+e.preventDefault();
+fbq('track','Subscribe');
+setTimeout(()=>{
+window.location.href="https://t.me/+PXEVK50A-es4YzJl";
+},400);
+}
+
+// fake live counter
+let count = 50321;
+setInterval(()=>{
+count += Math.floor(Math.random()*3);
+document.getElementById("liveCount").innerText = count.toLocaleString();
+},3000);
+
+// countdown
+let time = 300;
+setInterval(()=>{
+let m = Math.floor(time/60);
+let s = time%60;
+document.getElementById("timer").innerText = m+":"+(s<10?"0":"")+s;
+if(time>0) time--;
+},1000);
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{
+background:linear-gradient(180deg,#0b1120,#020617);
+color:#e2e8f0;
+display:flex;
+justify-content:center;
+padding:20px;
+}
+
+.container{width:380px;text-align:center;padding-bottom:120px}
+
+.profile{
+width:120px;height:120px;border-radius:50%;
+padding:6px;
+background:linear-gradient(45deg,#2563eb,#3b82f6);
+margin:auto;
+}
+.profile img{width:100%;height:100%;border-radius:50%}
+
+h1{color:#3b82f6;margin-top:15px}
+h2{color:#94a3b8;font-size:16px}
+
+.live{
+margin-top:10px;
+font-size:14px;
+color:#22c55e;
+}
+
+.timer{
+background:#dc2626;
+padding:8px;
+border-radius:10px;
+margin:12px 0;
+font-weight:bold;
+}
+
+/* BUTTON */
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
+
+.telegram-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:18px;
+border-radius:50px;
+background:linear-gradient(90deg,#2563eb,#3b82f6);
+color:#fff;
+font-size:18px;
+font-weight:bold;
+margin:20px 0;
+text-decoration:none;
+animation:pulse 1.5s infinite;
+box-shadow:0 0 25px rgba(59,130,246,0.7);
+}
+
+.telegram-btn:hover{transform:scale(1.1)}
+
+.card{
+display:flex;
+gap:10px;
+background:rgba(15,23,42,.6);
+padding:14px;
+border-radius:14px;
+margin-bottom:12px;
+text-align:left;
+}
+
+.footer{
+background:rgba(59,130,246,.1);
+padding:15px;
+border-radius:15px;
+margin-top:15px;
+font-size:13px;
+}
+
+.testimonial{
+background:#020617;
+padding:12px;
+border-radius:12px;
+margin-top:10px;
+text-align:left;
+font-size:13px;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.sticky-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;height:65px;
+border-radius:50%;
+background:#3b82f6;
+display:flex;
+align-items:center;
+justify-content:center;
+animation:pulse 1.5s infinite;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="profile">
+<img src="https://mdmads.online/angel.jpg">
+</div>
+
+<h1>
+ANGEL ONE TRADING EXPERT</h1>
+<h2>Official Trading Community</h2>
+
+<div class="live">
+👥 <span id="liveCount">50,321</span> people joined
+</div>
+
+<div class="timer">
+⏳ Offer Ending In: <span id="timer">5:00</span>
+</div>
+
+<a class="telegram-btn" href="https://t.me/+PXEVK50A-es4YzJl" onclick="trackSubscribe(event)">
+🚀 Join Free Telegram Now
+</a>
+
+<div class="card">📊 Daily Market Analysis</div>
+<div class="card">📚 Trading सीखो step-by-step</div>
+<div class="card">⚡ High Accuracy Signals</div>
+
+<div class="testimonial">
+⭐ "Bhai yaha se join kiya tha, daily profit ho raha hai!"  
+– Rahul (Delhi)
+</div>
+
+<div class="testimonial">
+⭐ "Best free channel for beginners 🔥"  
+– Aman (Mumbai)
+</div>
+
+<div class="footer">
+🚀 India's Fast Growing Trading Community  
+📈 Intraday + Investment  
+💰 Start Today
+</div>
+
+<div class="footer">
+⚠️ Disclaimer: Educational only. Trading risky hai.
+</div>
+
+<a class="sticky-btn" href="https://t.me/+PXEVK50A-es4YzJl" onclick="trackSubscribe(event)">
+🚀
+</a>
+
+</div>
+
+</body>
+</html>
